@@ -43,7 +43,7 @@ if [ ! -z $https_proxy ]; then
   npm config set https-proxy $https_proxy
 fi
 
-echo "---> Building your Node application from source"
+echo "---> Building your Node application from source (KM)"
 npm install -d
 
 cat /opt/app-root/src/npm-debug.log
