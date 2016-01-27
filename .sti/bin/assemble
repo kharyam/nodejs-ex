@@ -44,7 +44,7 @@ if [ ! -z $https_proxy ]; then
 fi
 
 echo "---> Building your Node application from source (KM)"
-npm install -d
+npm install -d && cat /opt/app-root/src/npm-debug.log
 
 echo "Catting log file:"
 cat /opt/app-root/src/npm-debug.log
