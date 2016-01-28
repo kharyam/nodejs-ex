@@ -23,6 +23,8 @@ set -e
 echo "---> Installing application source"
 cp -Rf /tmp/src/. ./
 
+fix-permissions /opt/rh/nodejs010/root/
+
 if [ ! -z $HTTP_PROXY ]; then
   echo "---> Setting npm http proxy to $HTTP_PROXY"
   npm config set proxy $HTTP_PROXY
